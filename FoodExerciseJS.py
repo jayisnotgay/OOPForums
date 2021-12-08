@@ -38,10 +38,12 @@ class Food:
         self.total = self.price * self.amount
         return self.total
 
+# Public function to format self.price in to dollars
     def price_format(self):
         self.priceformat = "$ {:,.2f}".format(self.price)
         return self.priceformat
 
+    # Public function to format self.total in to dollars
     def total_format(self):
         self.totalformat = "$ {:,.2f}".format(self.total)
         return self.totalformat
